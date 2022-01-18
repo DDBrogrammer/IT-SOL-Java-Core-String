@@ -2,8 +2,6 @@ public class Exercise_2 {
      private static Helper helper = new Helper();
      private static final String ONLY_LETTER_REGEX="^[a-zA-Z]*$";
     public static void main(String[] args) {
-        System.out.println(   getConvertString("dfsdfgsd"));
-
         do {
               String input=   helper.getString("Nhập vào 1 chuỗi kí tự chỉ chứa các chữ cái: ");
               if(checkLetter(input)){
@@ -12,7 +10,6 @@ public class Exercise_2 {
               }
         }while (true);
     }
-
 
     static boolean checkLetter(String str){
         return ((!str.equals(""))

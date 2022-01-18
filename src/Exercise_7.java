@@ -14,11 +14,7 @@ public class Exercise_7 {
         String tempString="";
         int len=(s1.length()/s2.length());
     for(int i=0;i<len;i++) {
-
     if (s1.contains(s2) && s1.length()>=s2.length()) {
-        System.out.println("s1: "+s1);
-        System.out.println("tem: "+tempString);
-        System.out.println("s2:"+s2);
         tempString = s1.substring(0, s1.indexOf(s2)) + s1.substring(s1.indexOf(s2)+s2.length(), s1.length() - 1);
         s1=tempString;
       } else tempString=s1;
