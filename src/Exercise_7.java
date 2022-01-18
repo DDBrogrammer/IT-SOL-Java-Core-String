@@ -12,10 +12,10 @@ public class Exercise_7 {
     }
     public static String getConvertString(String s1,String s2){
         String tempString="";
-        int len=s1.length()-1;
+        int len=(s1.length()/s2.length());
     for(int i=0;i<len;i++) {
 
-    if (s1.contains(s2) && s1.length()!=0) {
+    if (s1.contains(s2) && s1.length()>=s2.length()) {
         System.out.println("s1: "+s1);
         System.out.println("tem: "+tempString);
         System.out.println("s2:"+s2);
@@ -23,6 +23,9 @@ public class Exercise_7 {
         s1=tempString;
       } else tempString=s1;
      }
-        return tempString;
+    if(tempString==s2){
+        return "";
+
+    }       else return tempString;
     }
 }
